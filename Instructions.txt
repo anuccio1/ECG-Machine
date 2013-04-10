@@ -1,0 +1,15 @@
+Instructions For Lab 3
+
+If you dont have Microsoft Visual Studio 2012, then you must download and install it. 
+The files enclosed are for the ECG Machine and the ECG Database. 
+Zedgraph may need to be installed and added to both of these projects. It is available for download at sourceforge.net/projects/zedgraph/
+Instructions on how to add it to a C# project can be found at http://quantcsharp.webs.com/howtousezedgraph.htm
+You must make sure that the arduino source code is installed and plugged in to the computer. 
+As the port number on some computers may vary, you may need to adjust line 100 in the form1.cs file. The section that is "COM5" may be needed to be changed to the proper COM port being used
+In the same project, in Database.cs, line 68 may need to be changed as well. You must create an empty file on your computer, and change the filepath in this line to that empty folder. Files will be saved into this folder and will be used in the database part.
+
+For the ECGDatabase project, line 33 in Form1.cs must be changed to that same file path you changed earlier that contains the files.
+The last adjustment will be on line 105 and 117. It uses the number 31 for a reason. The filepath was "C:\Users\Alex\Desktop\ECG_DATA\" which is 31 characters long.
+Change the number from 31 to the appropriate length of your filepath.
+
+The program is now ready to begin.
